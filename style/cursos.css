@@ -159,7 +159,7 @@ main > section{
 }
 .cards > div  {
     width:  266px ;
-    /* 414 */
+    height: 400px;
     background-color: var(--gray-900);
     padding: 0.8em;
     border-radius: 6px;
@@ -176,15 +176,14 @@ main > section{
   
   
 }
-/* Predefinições do cards individuais */
-
 
 
 /* formatação dos TÍTULOS CARDS */
 
 .cards > div > h2{
+    height: 34px;
     font-size: 16px;
-    margin-top: 10px ;
+    margin-top: 12px ;
 }
 
 
@@ -196,57 +195,37 @@ main > section{
 
 
 /* formatação dos PARÁGRAFOS CARDS */
-.cards > div > .p_normal {
+.cards > div > p {
+    height: 132px;
     font-size: 14px;
-    margin-top: 18px ;
+    margin-top: 8px;
     font-weight: 200;
 }
-#p_mobile{
-    font-size: 14px;
-    font-weight: 200;
-}
+
 
 
 /* configuração do botão de ter acesso ao curso */
 .cards > div > .acessar_curso{
-    background-color: var(--green-100);
     width: 119px;
+    cursor: pointer;
     height: 32px;
     border: none;
-    font-size: 12px;
     border: 1px solid var(--gray-500);
+    font-size: 12px;
     border-radius: 6px;
-    cursor: pointer;
+    background-color: var(--green-100);
 }
 
-#btn_funcional{
-    margin-top: 34px;
-}
-#btn_java , #btn_crip{
-    margin-top: 15px;
-}
-#btn_ai{
-    margin-top: 15px;
-}
-
-#btn_apis{
-    margin-top: 35px;
-}
-
-#btn_mobile{
-    margin-top: 50px;
-
-}
 
 
 /* navegação filtro */
 section > nav {
-    background-color: var(--black-900);
-    max-width: 274px;
+    margin: 12px auto;
     height: 52px;
     padding: 1em;
+    max-width: 274px;
     border-radius: 12px;
-    margin: 12px auto;
+    background-color: var(--black-900);
     
 }
 
@@ -256,7 +235,6 @@ section > nav > ul {
     list-style-type: none;
     justify-content: space-around;
     background-color: var(--black-900);
-    
    
 
 
@@ -266,16 +244,24 @@ section > nav > ul {
 section > nav > ul > li{
     color: var(--gray-100);
     
+    
+}
+
+/* definição da cor do botão dos filtros */
+section > nav > ul > li:nth-child(2){
+    padding: 0 1em;
+    border-left: var(--gray-100) 1px solid;
+    border-right: var(--gray-100) 1px solid;
+    
 }
 
 /* botão de filtro */
 .seletores{
-    background-color: var(--black-900);
-    border: none;
-    font-size: 16px;
     color: var(--gray-100);
+    border: none;
     cursor: pointer;
-    
+    font-size: 16px;
+    background-color: var(--black-900);
    
 }
 
