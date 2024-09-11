@@ -1,17 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-:root {
-    --black-900 : #09090B;
-    --black-700 : #18181B;
-    --gray-500  : #3E3E44;
-    --gray-400  : #7C7C8A;
-    --gray-100  : #A1A1AA;
-    --white-100 : #FAFAFA;
-    --white-200 : #797979;
-    --green-700 : #1A2E05;
-    --green-100 : #BEF264;
-    --gray-alpha: rgba(24, 24, 27, 0.985);  
-}
+@import url(paleta.css);
 
 *{  
     margin: 0;
@@ -19,19 +7,15 @@
     box-sizing: border-box;
 }
 
-main{
-    max-width: 1200px;
-}
-
 body{
     color: var(--white-100);
+    padding: 0 12px;
     overflow-x: hidden;
     font-family: Inter;
     background-color: var(--black-900);
 }
 
 header{
-    font-weight: 300;
     height: 80px;
     margin: 14px auto;
     border: 1px solid var(--gray-500);
@@ -39,6 +23,7 @@ header{
     padding: 16px;
     max-width: 1200px;
     align-items: center;
+    font-weight: 300;
     border-radius: 12px;
     justify-content: space-between;
     background-color: var(--black-700);
@@ -56,7 +41,7 @@ header #menu ul{
     text-decoration: none;
 }
 
-header #menu li a {
+header #menu li a , .menu-mobile li a {
     color: var(--white-100);
     padding: 4px;
     border-bottom: 1px solid #bef26400;
@@ -68,10 +53,12 @@ header #menu li a {
     width: 96px;
     height: 45px;
     display: flex;
+    transition: all 0.5s ease;
     align-items: center;
     border-radius: 6px;
     background-color: var(--white-100);
 }
+
 .loginIn>span{
     color: var(--black-900);
     padding: 0 0 0 10px;
@@ -79,13 +66,60 @@ header #menu li a {
 }
 
 .loginIn:hover{
-    transition: 200ms;
+    transition: .25s;
     background-color: var(--green-100);
 }
 
-header #menu li:hover a{
+header #menu li:hover a, header .menu-mobile li:hover a{
     color: var(--green-100);
     border-bottom: 1px solid #BEF264;
+}
+
+header .menu-mobile li{
+    width: 100%;
+}
+
+header .menu-mobile .loginIn{
+    margin: auto;
+    width: 50%;
+}
+
+header .menu-mobile .loginIn span{
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.menu-mobile{
+    top: 80px;
+    right: 12px;
+    width: 91.8vw;
+    display: none;
+    border-top: 1px solid var(--gray-500);
+    transition: .5s;
+    border-radius: 0px 0px 12px 12px;
+    background-color: var(--black-700); 
+}
+
+.menu-mobile ul{
+    list-style-type: none;
+}
+
+.menu-mobile ul li{
+    z-index: 2;
+    padding: 12px 0px;
+    text-align: center;
+}
+
+#sanduiche{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--gray-500);
+    cursor: pointer;
+    padding: 6px;
+    display: none;
+    border-radius: 6px;
+    background-color: var(--black-700);
 }
 
 main{
@@ -93,19 +127,19 @@ main{
     max-width: 1200px;
 }
 
-footer{
-    color: var(--white-100);
-    padding: 45px 0px; 
-    margin-top: 104px;
-    border-top: 1px solid var(--gray-500);
-    background-color: var(--black-900);
-}
-
 #container_footer{
     margin: auto;
     display: flex;
     max-width: 1200px;
     justify-content: space-between;
+}
+
+footer{
+    color: var(--white-100);
+    padding: 45px 0px; 
+    margin-top: 24px;
+    border-top: 1px solid var(--gray-500);
+    background-color: var(--black-900);
 }
 
 footer section p{
@@ -148,3 +182,40 @@ footer .logo a{
     display: flex;
 }
 
+.intro {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+@media screen and (max-width: 630px) {
+    header{
+        gap: 24px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    #sanduiche{
+        display: block;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    .open{
+    display: block;
+    transition: .25s;
+}
+}

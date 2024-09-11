@@ -1,17 +1,4 @@
-:root {
-    --black-900 : #09090B;
-    --black-700 : #18181B;
-    --gray-alpha: rgba(24, 24, 27, 0.985);
-    --gray-900  : #27272A;
-    --gray-500  : #3E3E44;
-    --gray-400  : #7C7C8A;
-    --gray-100  : #A1A1AA;
-    --white-100 : #FAFAFA;
-    --white-200 : #797979;
-    --green-700 : #1A2E05;
-    --green-100 : #BEF264;
-    
-}
+@import url(paleta.css);
 
 main > nav{
     margin: 70px 0;
@@ -159,7 +146,7 @@ main > section{
 }
 .cards > div  {
     width:  266px ;
-    height: 400px;
+    /* 414 */
     background-color: var(--gray-900);
     padding: 0.8em;
     border-radius: 6px;
@@ -176,14 +163,15 @@ main > section{
   
   
 }
+/* Predefinições do cards individuais */
+
 
 
 /* formatação dos TÍTULOS CARDS */
 
 .cards > div > h2{
-    height: 34px;
     font-size: 16px;
-    margin-top: 12px ;
+    margin-top: 10px ;
 }
 
 
@@ -195,37 +183,57 @@ main > section{
 
 
 /* formatação dos PARÁGRAFOS CARDS */
-.cards > div > p {
-    height: 132px;
+.cards > div > .p_normal {
     font-size: 14px;
-    margin-top: 8px;
+    margin-top: 18px ;
+    font-weight: 200;
+}
+#p_mobile{
+    font-size: 14px;
     font-weight: 200;
 }
 
 
-
 /* configuração do botão de ter acesso ao curso */
 .cards > div > .acessar_curso{
+    background-color: var(--green-100);
     width: 119px;
-    cursor: pointer;
     height: 32px;
     border: none;
-    border: 1px solid var(--gray-500);
     font-size: 12px;
+    border: 1px solid var(--gray-500);
     border-radius: 6px;
-    background-color: var(--green-100);
+    cursor: pointer;
 }
 
+#btn_funcional{
+    margin-top: 34px;
+}
+#btn_java , #btn_crip{
+    margin-top: 15px;
+}
+#btn_ai{
+    margin-top: 15px;
+}
+
+#btn_apis{
+    margin-top: 35px;
+}
+
+#btn_mobile{
+    margin-top: 50px;
+
+}
 
 
 /* navegação filtro */
 section > nav {
-    margin: 12px auto;
+    background-color: var(--black-900);
+    max-width: 274px;
     height: 52px;
     padding: 1em;
-    max-width: 274px;
     border-radius: 12px;
-    background-color: var(--black-900);
+    margin: 12px auto;
     
 }
 
@@ -235,33 +243,23 @@ section > nav > ul {
     list-style-type: none;
     justify-content: space-around;
     background-color: var(--black-900);
-   
-
-
 
 }
+
 /* definição da cor do botão dos filtros */
 section > nav > ul > li{
     color: var(--gray-100);
-    
-    
-}
-
-/* definição da cor do botão dos filtros */
-section > nav > ul > li:nth-child(2){
-    padding: 0 1em;
-    border-left: var(--gray-100) 1px solid;
-    border-right: var(--gray-100) 1px solid;
     
 }
 
 /* botão de filtro */
 .seletores{
-    color: var(--gray-100);
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
     background-color: var(--black-900);
+    border: none;
+    font-size: 16px;
+    color: var(--gray-100);
+    cursor: pointer;
+    
    
 }
 

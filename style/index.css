@@ -1,20 +1,9 @@
-:root {
-    --black-900 : #09090B;
-    --black-700 : #18181B;
-    --gray-500  : #3E3E44;
-    --gray-400  : #7C7C8A;
-    --gray-100  : #A1A1AA;
-    --white-100 : #FAFAFA;
-    --white-200 : #797979;
-    --green-700 : #1A2E05;
-    --green-100 : #BEF264;
-    --gray-alpha: rgba(24, 24, 27, 0.985);  
-}
+@import url(paleta.css);
 
 body{
     
     background-size: cover;
-    background-image: url(../images/background_4.png);
+    background-image: url(../images/background/background_4.png);
     background-repeat: no-repeat;
     background-position: top;
 }
@@ -27,27 +16,9 @@ body{
     justify-content: space-between;
 }
 
-#bemVindo>div{
-    max-width: 600px;
-}
-
 .container>div>h2{
     color: var(--green-100);
     font-size: 40px;
-}
-
-#bemVindo>div>h2>span{
-    color: var(--black-900);
-    display: inline-block;
-    background-color: var(--white-100);
-}
-
-#bemVindo>div>.lineBottom{
-    width: 200px;
-    height: 8px;
-    margin: 16px 0;
-    border-radius: 0 20px 20px 0;
-    background-color: var(--white-100);
 }
 
 .container>div>p{
@@ -67,14 +38,35 @@ body{
     background-color: var(--green-100);
 }
 
+
+#bemVindo>div{
+    max-width: 600px;
+}
+
+#bemVindo>div>h2>span{
+    color: var(--black-900);
+    display: inline-block;
+    background-color: var(--white-100);
+}
+
+#bemVindo>div>.lineBottom{
+    width: 200px;
+    height: 8px;
+    margin: 16px 0;
+    border-radius: 0 20px 20px 0;
+    background-color: var(--white-100);
+}
+
 #quemSomos{
     gap: 32px;
     margin: 430px 0 0 0;
     flex-wrap: wrap;
 }
+
 #quemSomos>div{
     max-width: 600px;
 }
+
 #quemSomos>div>p{
     padding: 0 0 0 20px;
     border-left: 5px solid var(--green-100);
@@ -85,11 +77,10 @@ body{
     margin: 90px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
-#cardsCursos>section{
+#cardsCursos section{
     height: 320px;
     border: 1px solid var(--gray-500);
     max-width: 386px;
@@ -98,7 +89,7 @@ body{
 }
 
 #cardsCursos .imagem{
-    width: 385px;
+    max-width: 378px;
     height: 150px;
     border-top: 1px solid var(--gray-500);
     border-left: 1px solid var(--gray-500);
@@ -107,35 +98,34 @@ body{
     background-color: var(--gray-500);
 }
 
-#cardsCursos>section>h3{
+#cardsCursos section>h3{
     padding: 5px 13px;
 }
 
-#cardsCursos>section>p{
+#cardsCursos section>p{
     color: var(--green-100);
     padding: 5px 13px;
     font-size: 14px;
     font-weight: 300;
 }
 
-#cardsCursos>section>.perfilProf{
+.perfilProf{
     gap: 8px;
     display: flex;
     padding: 13px;
     align-items: center;
 }
 
-#cardsCursos>section>.perfilProf p{
-    
+.perfilProf p{  
     padding: 3px;
 }
 
-#cardsCursos>section>.perfilProf .atuacao{
+.perfilProf .atuacao {
     color: var(--gray-100);
     font-weight: 300;
 }
 
-#cardsCursos>section>.perfilProf img{
+.perfilProf img{
     width: 40px;
     height: 40px;
     border: 1px solid var(--green-100);
@@ -167,8 +157,8 @@ body{
 }
 
 .numeroros .estatisticas>section>h3{
-    font-size: 32px;
     margin: 12px 0;
+    font-size: 32px;
 }
 
 .linguagens{     
@@ -181,8 +171,8 @@ body{
 
 .linguagens>p {
     width: 100%;
-    text-align: center;
     color: var(--green-100);
+    text-align: center;
 }
 
 .linguagens>h2 {
@@ -207,4 +197,8 @@ body{
 .linguagem>div h3{
     color: var(--green-100);
     margin-bottom: 10px;
+}
+
+swiper-slide{
+    padding: 48px 0;
 }
