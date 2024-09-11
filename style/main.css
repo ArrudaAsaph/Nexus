@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url(paleta.css);
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--white-100);
+    padding: 0 12px;
+    overflow-x: hidden;
+    font-family: Inter;
+    background-color: var(--black-900);
+}
+
+header{
+    height: 80px;
+    margin: 14px auto;
+    border: 1px solid var(--gray-500);
+    display: flex;
+    padding: 16px;
+    max-width: 1200px;
+    align-items: center;
+    font-weight: 300;
+    border-radius: 12px;
+    justify-content: space-between;
+    background-color: var(--black-700);
+}
+
+header #menu ul{
+    gap: 16px;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.logo a{
+    color: var(--green-100);
+    text-decoration: none;
+}
+
+header #menu li a , .menu-mobile li a {
+    color: var(--white-100);
+    padding: 4px;
+    border-bottom: 1px solid #bef26400;
+    text-decoration: none;
+}
+
+.loginIn{
+    color: var(--black-900);
+    width: 96px;
+    height: 45px;
+    display: flex;
+    transition: all 0.5s ease;
+    align-items: center;
+    border-radius: 6px;
+    background-color: var(--white-100);
+}
+
+.loginIn>span{
+    color: var(--black-900);
+    padding: 0 0 0 10px;
+    box-sizing: content-box;
+}
+
+.loginIn:hover{
+    transition: .25s;
+    background-color: var(--green-100);
+}
+
+header #menu li:hover a, header .menu-mobile li:hover a{
+    color: var(--green-100);
+    border-bottom: 1px solid #BEF264;
+}
+
+header .menu-mobile li{
+    width: 100%;
+}
+
+header .menu-mobile .loginIn{
+    margin: auto;
+    width: 50%;
+}
+
+header .menu-mobile .loginIn span{
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.menu-mobile{
+    top: 80px;
+    right: 12px;
+    width: 91.8vw;
+    display: none;
+    border-top: 1px solid var(--gray-500);
+    transition: .5s;
+    border-radius: 0px 0px 12px 12px;
+    background-color: var(--black-700); 
+}
+
+.menu-mobile ul{
+    list-style-type: none;
+}
+
+.menu-mobile ul li{
+    z-index: 2;
+    padding: 12px 0px;
+    text-align: center;
+}
+
+#sanduiche{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--gray-500);
+    cursor: pointer;
+    padding: 6px;
+    display: none;
+    border-radius: 6px;
+    background-color: var(--black-700);
+}
+
+main{
+    margin: auto;
+    max-width: 1200px;
+}
+
+#container_footer{
+    margin: auto;
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+footer{
+    color: var(--white-100);
+    padding: 45px 0px; 
+    margin-top: 24px;
+    border-top: 1px solid var(--gray-500);
+    background-color: var(--black-900);
+}
+
+footer section p{
+    margin-top: 32px;
+}
+
+footer section h4{
+    padding-bottom: 5px;
+}
+
+footer section ul{
+    list-style-type: none;
+}
+
+footer section ul li{
+    padding: 5px 0;
+}
+
+section a{ 
+    color: var(--white-200);
+    text-decoration: none;
+}
+
+footer .logo {
+    padding-bottom: 12px;
+}
+
+footer .logo a{
+    color: var(--white-100);
+    font-size: 32px;
+    padding-bottom: 12px;
+}
+
+.media img{
+    width: 30px;
+}
+
+.social ul{ 
+    gap: 12px;
+    display: flex;
+}
+
+.intro {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+@media screen and (max-width: 630px) {
+    header{
+        gap: 24px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    #sanduiche{
+        display: block;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    .open{
+    display: block;
+    transition: .25s;
+}
+}

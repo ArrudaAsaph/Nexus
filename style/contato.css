@@ -1,0 +1,111 @@
+@import url(paleta.css);
+
+form{
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;   
+    margin-top: 48px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#dadosUser{
+    flex-grow: 1;
+    border: 1px solid var(--gray-500);
+    padding: 32px;
+    max-height: 500px;
+    border-radius: 12px;
+    background-color: var(--black-700);
+}
+
+#mensagem{
+    border: 1px solid var(--gray-500);
+    padding: 32px;
+    flex-grow: 2;
+    max-height: 490px;
+    border-radius: 12px;
+    background-color: var(--black-700);
+}
+
+#dadosUser img{
+    width: 64px;
+    margin: auto;
+    display: block;   
+}
+
+#dadosUser p{
+    color: var(--gray-100);
+    margin: 12px 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+form .inputs{
+    gap: 6px;
+    margin: 12px 0 24px 0;
+    height: 48px;
+    padding: 0px 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background-color: var(--gray-500); 
+}
+form .input_texto{
+    gap: 6px;
+    margin: 12px 0 24px 0;
+    height: 234px;
+    padding: 0px 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background-color: var(--gray-500);   
+}
+
+
+input[type="email"], input[type="password"], input[type="text"], input[type="tel"], input[type="date"], select, textarea  {
+    color: var(--white-100);
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 6px;
+    font-size: 16px;
+    background-color: var(--gray-500);
+}
+
+#texto{
+    color: var(--white-100);
+    width: 100%;
+    border: none;
+    resize: none;
+    height: 216px;
+    outline: none;
+    padding: 6px;
+    font-size: 16px;
+    background-color: var(--gray-500);  
+}
+
+.input_texto > svg{
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+
+div>input[type="submit"] {  
+    display: block;
+    margin-left: auto;
+    width: 178px;
+    height: 43px;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    background-color: var(--green-100);
+}
+
+input[type="submit"]:hover {  
+    width: 178px;
+    height: 43px;
+    transition: 100ms;
+    background-color: var(--green-200);
+}
