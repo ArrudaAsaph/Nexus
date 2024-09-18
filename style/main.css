@@ -137,9 +137,11 @@ main{
 
 footer{
     color: var(--white-100);
+
     width: 100vw;
     position: absolute;
     left:  0px;
+
     padding: 45px 0px; 
     margin-top: 24px;
     border-top: 1px solid var(--gray-500);
@@ -224,6 +226,7 @@ footer .logo a{
 }
 }
 
+
 @media screen and (max-width: 480px) {
     #container_footer{
         gap: 32px;
@@ -232,3 +235,4 @@ footer .logo a{
     }
     
 }
+

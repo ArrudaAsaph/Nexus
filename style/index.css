@@ -1,8 +1,10 @@
 @import url(paleta.css);
 
+
 body{   
     background-size: cover;
     background-image: url(../images/background/background1.jpg);
+
     background-repeat: no-repeat;
     background-position: top;
 }
@@ -16,6 +18,7 @@ body{
     justify-content: space-between;
 }
 
+
 .container>div h2{
     color: var(--green-100);
     font-size: 40px;
@@ -26,12 +29,15 @@ body{
 }
 
 .container .button{
+
+
     color: var(--green-100);
     border: 1px solid var(--green-100);
     display: inline-block;
     padding: 12px 32px;
     border-radius: 6px;
 }
+
 
 .container a.button:hover{
     color: var(--black-900);
@@ -67,6 +73,7 @@ body{
     padding: 45px 0;
     position: absolute;
     background-image: linear-gradient(to right, var(--black-900), var(--black-700), var(--black-900));   
+
 }
 
 .numeroros div{
@@ -91,7 +98,9 @@ body{
     font-size: 32px;
 }
 
+
 /*----------------------------------------------------------*/
+
 
 #quemSomos{
     gap: 32px;
@@ -99,6 +108,7 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
+
 
 #quemSomos div{
     max-width: 600px;
@@ -109,6 +119,8 @@ body{
 }
 
 #quemSomos div p{
+
+
     padding: 0 0 0 20px;
     border-left: 5px solid var(--green-100);
 }
@@ -124,6 +136,7 @@ body{
 }
 
 .cardsCursos section{
+
     height: 320px;
     border: 1px solid var(--gray-500);
     max-width: 386px;
@@ -131,7 +144,9 @@ body{
     background-color: var(--black-700);
 }
 
+
 .cardsCursos .imagem{
+
     max-width: 378px;
     height: 150px;
     border-top: 1px solid var(--gray-500);
@@ -141,11 +156,13 @@ body{
     background-color: var(--gray-500);
 }
 
+
 .cardsCursos section h3{
     padding: 5px 13px;
 }
 
 .cardsCursos section>p{
+
     color: var(--green-100);
     padding: 5px 13px;
     font-size: 14px;
@@ -176,7 +193,7 @@ body{
     background-color: var(--gray-500);
 }
 
-/*----------------------------------------------------------*/
+
 
 .linguagens{     
     gap: 16px 30px;
@@ -190,7 +207,9 @@ body{
     width: 100%;
     color: var(--green-100);
     text-align: center;
+
     font-weight: 400;
+
 }
 
 .linguagens>p {
@@ -217,6 +236,7 @@ body{
     color: var(--green-100);
     margin-bottom: 10px;
 }
+
 
 /*----------------------------------------------------------*/
 
@@ -296,4 +316,5 @@ swiper-slide{
     }
 
 }
+
 
