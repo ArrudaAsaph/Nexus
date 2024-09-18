@@ -87,6 +87,10 @@ input[type="email"], input[type="password"], input[type="text"], input[type="tel
 .input_texto > svg{
     margin-top: 10px;
     margin-bottom: auto;
+
+    width: 2em;
+    height: 2em;
+
 }
 
 div>input[type="submit"] {  
@@ -109,3 +113,24 @@ input[type="submit"]:hover {
     transition: 100ms;
     background-color: var(--green-200);
 }
+
+
+@media screen and (max-width: 758px) {
+    form{
+        display: inline;
+
+    }
+}  
+@media screen and (max-width: 400px) {
+    #mensagem{
+        margin-top: 20px;
+    }
+    #mensagem svg {
+        width: 50;
+        height: 50;
+        fill: none;
+    }
+
+
+}
+

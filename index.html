@@ -60,7 +60,7 @@
     <main>
         <section data-aos="zoom-in-down" id="bemVindo" class="container">
             <div>
-                <h2>Bem-vindo a N<span>exus!</span></h2>
+                <h2>Bem-vindo à N<span>exus!</span></h2>
                 <div class="lineBottom"></div>
                 <p>
                     Bem-vindo ao Nexus! Estamos empolgados em ter você aqui. No Nexus, oferecemos aulas de alta
@@ -68,15 +68,14 @@
                     seus objetivos na área de tecnologia. Explore nossos cursos e descubra como podemos apoiar sua
                     jornada no desenvolvimento de software!
                 </p>
-                <a href="#" class="button">Primeiro Botão</a>
+                <a href="#nossoNum" class="button">Conheça-nos melhor</a>
             </div>
             <picture>
-                <source media="(min-width: 1000px )" srcset="images/logonexus.png">
-                <img src="" alt="logo da nexux">
+                <img src="images/logonexus.png" alt="logo da nexux">
             </picture>
         </section>
-        <section class="numeroros">
-            <div class="estatisticas">
+        <section class="numeroros" id="nossoNum">
+            <div>
                 <section>
                     <img src="images/icones/index/estrela.svg" alt="">
                     <h3 class="titles">Nota 4.9</h3>
@@ -97,8 +96,9 @@
         </section>
         <section id="quemSomos" class="container">
             <picture class="intro">
-                <source media="(min-width: 1000px )" srcset="images/imagensSobrepostas.png">
-                <img src="" alt="imagem sobreposta">
+                <source media="(min-width: 1151px )" srcset="images/imagensSobrepostas.png">
+                <img src="images/imagensSobrepostas2.png" alt="imagem sobreposta">
+
             </picture>
             <div>
                 <h2 class="intro">Quem <span>somos?</span></h2>
@@ -109,67 +109,82 @@
                     e treinamentos projetados para atender às necessidades de desenvolvedores em todos os níveis, desde
                     iniciantes até especialistas.
                 </p>
+
+                <figure>
+                    <img src="images/imagensSobrepostas2.png" alt="">
+                </figure>
+
                 <p class="intro">
                     Nosso compromisso é com a excelência na formação técnica e no desenvolvimento contínuo, utilizando
                     recursos atualizados e abordagens práticas para garantir que nossos alunos estejam sempre à frente
                     no setor. Na Nexus, acreditamos que investir no aprendizado é essencial para enfrentar os desafios
                     do mercado tecnológico e alcançar o sucesso na carreira de desenvolvimento de software.
                 </p>
-                <a href="#" class="button intro">Primeiro Botão</a>
+
+                <a href="cursos.html" class="button intro">Ver nosso cursos</a>
             </div>
         </section>
 
-        <swiper-container class="mySwiper intro to-hide" id="cardsCursos" pagination="true" pagination-clickable="true"
+        <swiper-container class="mySwiper intro cardsCursos" id="slide-desktop" pagination="true" pagination-clickable="true"
+
             space-between="30" slides-per-view="3">
             <swiper-slide>
                 <section class="card card1">
                     <div class="imagem curso1"></div>
-                    <p>INICIANTE</p>
-                    <h3>Lógica de Programação</h3>
+
+                    <p>INTERMEDIÁRIO</p>
+                    <h3>Programação Funcional</h3>
                     <div class="perfilProf">
-                        <img src="images/professores/prof1.png" alt="Imagem Prof. Gabriel Azevedo">
+                        <img src="images/professores/prof1.png" alt="">
                         <div>
-                            <p class="name">Gabriel Azevedo</p>
-                            <p class="atuacao">Desenvolvedor Pleno</p>
+                            <p class="name">Nome Sobrenome</p>
+                            <p class="atuacao">Área de atuação</p>
+
                         </div>
                     </div>
                 </section>
             </swiper-slide>
             <swiper-slide>
-                <section class="card card1">
-                    <div class="imagem curso1"></div>
-                    <p>INICIANTE</p>
-                    <h3>JavaScript</h3>
+
+                <section class="card card2">
+                    <div class="imagem curso2"></div>
+                    <p>INTERMEDIÁRIO</p>
+                    <h3>Chatbots com IA</h3>
                     <div class="perfilProf">
-                        <img src="images/professores/prof5.png" alt="Imagem Prof. Emily Thompson">
+                        <img src="images/professores/prof2.png" alt="">
                         <div>
-                            <p class="name">Emily Thompson</p>
-                            <p class="atuacao">Desenvolvedora de Sistemas</p>
+                            <p class="name">Nome Sobrenome</p>
+                            <p class="atuacao">Área de atuação</p>
+
                         </div>
                     </div>
                 </section>
             </swiper-slide>
             <swiper-slide>
-                <section class="card card1">
-                    <div class="imagem curso1"></div>
-                    <p>INICIANTE</p>
-                    <h3>Algoritmos</h3>
+
+                <section class="card card3">
+                    <div class="imagem curso3"></div>
+                    <p>INTERMEDIÁRIO</p>
+                    <h3>Desenvolvimento Mobile com Flutter</h3>
                     <div class="perfilProf">
-                        <img src="images/professores/prof6.png" alt="Imagem do Prof. Ravi Patel">
+                        <img src="images/professores/prof3.png" alt="">
                         <div>
-                            <p class="name">Ravi Patel</p>
-                            <p class="atuacao">Desenvolvedor Sênior e CyberSecurity</p>
+                            <p class="name">Nome Sobrenome</p>
+                            <p class="atuacao">Área de atuação</p>
+
                         </div>
                     </div>
                 </section>
             </swiper-slide>
             <swiper-slide>
-                <section class="card card1">
-                    <div class="imagem curso1"></div>
+
+                <section class="card card4">
+                    <div class="imagem curso4"></div>
                     <p>INICIANTE</p>
-                    <h3>Lógica de Programação</h3>
+                    <h3>POO com Java</h3>
                     <div class="perfilProf">
-                        <img src="" alt="">
+                        <img src="images/professores/prof4.png" alt="">
+
                         <div>
                             <p class="name">Nome Sobrenome</p>
                             <p class="atuacao">Área de atuação</p>
@@ -178,12 +193,14 @@
                 </section>
             </swiper-slide>
             <swiper-slide>
-                <section class="card card1">
-                    <div class="imagem curso1"></div>
-                    <p>INICIANTE</p>
-                    <h3>Lógica de Programação</h3>
+
+                <section class="card card5">
+                    <div class="imagem curso5"></div>
+                    <p>AVANÇADO</p>
+                    <h3>Blockchain e Criptografia</h3>
                     <div class="perfilProf">
-                        <img src="" alt="">
+                        <img src="images/professores/prof5.png" alt="">
+
                         <div>
                             <p class="name">Nome Sobrenome</p>
                             <p class="atuacao">Área de atuação</p>
@@ -192,12 +209,14 @@
                 </section>
             </swiper-slide>
             <swiper-slide>
-                <section class="card card1 ">
-                    <div class="imagem curso1"></div>
-                    <p>INICIANTE</p>
-                    <h3>Lógica de Programação</h3>
+
+                <section class="card card6 ">
+                    <div class="imagem curso6"></div>
+                    <p>AVANÇADO</p>
+                    <h3>APIs RESTful com Python</h3>
                     <div class="perfilProf">
-                        <img src="" alt="">
+                        <img src="images/professores/prof6.png" alt="">
+
                         <div>
                             <p class="name">Nome Sobrenome</p>
                             <p class="atuacao">Área de atuação</p>
@@ -207,11 +226,187 @@
             </swiper-slide>
         </swiper-container>
 
-        
+
+        <swiper-container class="mySwiper intro cardsCursos" id="slide-tablet" pagination="true" pagination-clickable="true"
+            space-between="30" slides-per-view="2">
+            <swiper-slide>
+                <section class="card card1">
+                    <div class="imagem curso1"></div>
+                    <p>INTERMEDIÁRIO</p>
+                    <h3>Programação Funcional</h3>
+                    <div class="perfilProf">
+                        <img src="images/professores/prof1.png" alt="">
+                        <div>
+                            <p class="name">Nome Sobrenome</p>
+                            <p class="atuacao">Área de atuação</p>
+                        </div>
+                    </div>
+                </section>
+            </swiper-slide>
+            <swiper-slide>
+                <section class="card card2">
+                    <div class="imagem curso2"></div>
+                    <p>INTERMEDIÁRIO</p>
+                    <h3>Chatbots com IA</h3>
+                    <div class="perfilProf">
+                        <img src="images/professores/prof2.png" alt="">
+                        <div>
+                            <p class="name">Nome Sobrenome</p>
+                            <p class="atuacao">Área de atuação</p>
+                        </div>
+                    </div>
+                </section>
+            </swiper-slide>
+            <swiper-slide>
+                <section class="card card3">
+                    <div class="imagem curso3"></div>
+                    <p>INTERMEDIÁRIO</p>
+                    <h3>Desenvolvimento Mobile com Flutter</h3>
+                    <div class="perfilProf">
+                        <img src="images/professores/prof3.png" alt="">
+                        <div>
+                            <p class="name">Nome Sobrenome</p>
+                            <p class="atuacao">Área de atuação</p>
+                        </div>
+                    </div>
+                </section>
+            </swiper-slide>
+            <swiper-slide>
+                <section class="card card4">
+                    <div class="imagem curso4"></div>
+                    <p>INICIANTE</p>
+                    <h3>POO com Java</h3>
+                    <div class="perfilProf">
+                        <img src="images/professores/prof4.png" alt="">
+                        <div>
+                            <p class="name">Nome Sobrenome</p>
+                            <p class="atuacao">Área de atuação</p>
+                        </div>
+                    </div>
+                </section>
+            </swiper-slide>
+            <swiper-slide>
+                <section class="card card5">
+                    <div class="imagem curso5"></div>
+                    <p>AVANÇADO</p>
+                    <h3>Blockchain e Criptografia</h3>
+                    <div class="perfilProf">
+                        <img src="images/professores/prof5.png" alt="">
+                        <div>
+                            <p class="name">Nome Sobrenome</p>
+                            <p class="atuacao">Área de atuação</p>
+                        </div>
+                    </div>
+                </section>
+            </swiper-slide>
+            <swiper-slide>
+                <section class="card card6 ">
+                    <div class="imagem curso6"></div>
+                    <p>AVANÇADO</p>
+                    <h3>APIs RESTful com Python</h3>
+                    <div class="perfilProf">
+                        <img src="images/professores/prof6.png" alt="">
+                        <div>
+                            <p class="name">Nome Sobrenome</p>
+                            <p class="atuacao">Área de atuação</p>
+                        </div>
+                    </div>
+                </section>
+            </swiper-slide>
+        </swiper-container>
+
+        <swiper-container class="mySwiper intro cardsCursos" id="slide-mobile" pagination="true" pagination-clickable="true"
+            space-between="30" slides-per-view="1">
+            <swiper-slide>
+                <section class="card card1">
+                    <div class="imagem curso1"></div>
+                    <p>INTERMEDIÁRIO</p>
+                    <h3>Programação Funcional</h3>
+                    <div class="perfilProf">
+                        <img src="images/professores/prof1.png" alt="">
+                        <div>
+                            <p class="name">Nome Sobrenome</p>
+                            <p class="atuacao">Área de atuação</p>
+                        </div>
+                    </div>
+                </section>
+            </swiper-slide>
+            <swiper-slide>
+                <section class="card card2">
+                    <div class="imagem curso2"></div>
+                    <p>INTERMEDIÁRIO</p>
+                    <h3>Chatbots com IA</h3>
+                    <div class="perfilProf">
+                        <img src="images/professores/prof2.png" alt="">
+                        <div>
+                            <p class="name">Nome Sobrenome</p>
+                            <p class="atuacao">Área de atuação</p>
+                        </div>
+                    </div>
+                </section>
+            </swiper-slide>
+            <swiper-slide>
+                <section class="card card3">
+                    <div class="imagem curso3"></div>
+                    <p>INTERMEDIÁRIO</p>
+                    <h3>Desenvolvimento Mobile com Flutter</h3>
+                    <div class="perfilProf">
+                        <img src="images/professores/prof3.png" alt="">
+                        <div>
+                            <p class="name">Nome Sobrenome</p>
+                            <p class="atuacao">Área de atuação</p>
+                        </div>
+                    </div>
+                </section>
+            </swiper-slide>
+            <swiper-slide>
+                <section class="card card4">
+                    <div class="imagem curso4"></div>
+                    <p>INICIANTE</p>
+                    <h3>POO com Java</h3>
+                    <div class="perfilProf">
+                        <img src="images/professores/prof4.png" alt="">
+                        <div>
+                            <p class="name">Nome Sobrenome</p>
+                            <p class="atuacao">Área de atuação</p>
+                        </div>
+                    </div>
+                </section>
+            </swiper-slide>
+            <swiper-slide>
+                <section class="card card5">
+                    <div class="imagem curso5"></div>
+                    <p>AVANÇADO</p>
+                    <h3>Blockchain e Criptografia</h3>
+                    <div class="perfilProf">
+                        <img src="images/professores/prof5.png" alt="">
+                        <div>
+                            <p class="name">Nome Sobrenome</p>
+                            <p class="atuacao">Área de atuação</p>
+                        </div>
+                    </div>
+                </section>
+            </swiper-slide>
+            <swiper-slide>
+                <section class="card card6 ">
+                    <div class="imagem curso6"></div>
+                    <p>AVANÇADO</p>
+                    <h3>APIs RESTful com Python</h3>
+                    <div class="perfilProf">
+                        <img src="images/professores/prof6.png" alt="">
+                        <div>
+                            <p class="name">Nome Sobrenome</p>
+                            <p class="atuacao">Área de atuação</p>
+                        </div>
+                    </div>
+                </section>
+            </swiper-slide>
+        </swiper-container>
 
         <section class=" container linguagens">
-            <p class="intro">Linguagens usadas</p>
-            <h2 class="intro">Aqui você aprende</h2>
+            <h2 class="intro">Linguagens usadas</h2>
+            <p class="intro">Aqui você aprende</p>
+
             <section class="linguagem intro">
                 <img src="images/icones/index/java.svg" alt="Logo da linguagem de programação java na cor branca">
                 <div>
