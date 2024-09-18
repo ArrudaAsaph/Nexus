@@ -1,0 +1,70 @@
+@import url(paleta.css);
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 45px;
+    justify-content: space-between;
+}
+
+.perfil{
+    height: 390px;
+    padding: 24px;
+    border: 1px solid var(--gray-500);
+    max-width: 358px;
+    margin-top: 180px;
+    border-radius: 12px;
+    background-color: var(--black-700);
+}
+
+.perfil>img, .perfil>h2, .perfil>span, .perfil>p, .perfil>ul{
+    top: -100px;
+    position: relative;
+}
+
+.perfil>img{
+    width: 163px;
+    height: 163px;
+    border: 3px solid var(--green-100);
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    background-color: var(--black-900);
+}
+
+.perfil>h2{
+    padding: 24px 0 0 0;
+    text-align: center;
+}
+
+.perfil>span{
+    color: var(--green-100);
+    display: block;
+    padding: 0px 0 28px 0;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 24px;
+    border-bottom: 2px solid var(--gray-500);
+}
+
+.perfil>p{
+    text-align: center;
+}
+
+.perfil>ul{
+    gap: 10px;
+    display: flex;
+    padding: 32px;
+    list-style-type: none;
+    justify-content: center;
+}
+
+@media screen and (max-width: 758px) {
+    main{
+        display: block;
+    }
+    .perfil{
+        margin: 120px auto;
+    }
+}   
